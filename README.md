@@ -1,9 +1,9 @@
 # GPUwVerilog
 Simple GPU Design in Verilog
 
-We are a group of students working on designing a simple GPU using Verilog. Our aim is to study and implement basic GPU functionalities to enhance our understanding of hardware design and parallel processing.
+We are a group of students working on designing a simple GPU using Verilog. Our aim is to study and implement basic GPU functionalities to help us understand more on hardware designs and parallel processing.
 
-While we have taken some inspiration from [adam-maj/tiny-gpu](https://github.com/adam-maj/tiny-gpu), our project is independently developed to suit our learning objectives.
+We have taken some inspiration from [adam-maj/tiny-gpu](https://github.com/adam-maj/tiny-gpu), our project is independently developed to suit our learning objectives.
 
 ## Completed Tasks by Week
 
@@ -15,8 +15,8 @@ While we have taken some inspiration from [adam-maj/tiny-gpu](https://github.com
 | 3    | Researched GPU architectures and its componetns |
 | 4    | High-Level Design and Specification             |
 | 5    | Module development                              |
-| 6    |                                                 |
-| 7    |                                                 |
+| 6    | Module development                              |
+| 7    | Module development                              |
 
 ## Planned Tasks
 
