@@ -22,22 +22,22 @@ We have taken some inspiration from [adam-maj/tiny-gpu](https://github.com/adam-
 
 | Task                               | Weight | Status       |
 |------------------------------------|--------|--------------|
-| Implement program counter          | High   | In Progress  |
-| Implement register file            | High   | In Progress  |
-| Implement memory interface and LSU | High   | In Progress  |
-| Implement ALU                      | High   | In Progress  |
-| Implement control unit             | High   | In Progress  |
-| Implement instruction decoder      | High   | In Progress  |
-| Create testbenches for all modules | Medium | Not Started  |
-| Integrate all components           | Medium | Not Started  |
-| Perform simulation                 | Low    | Not Started  |
+| Implement program counter          | High   | Completed    |
+| Implement register file            | High   | Completed    |
+| Implement memory interface and LSU | High   | Partially    |
+| Implement ALU                      | High   | Completed    |
+| Implement control unit             | High   | Completed    |
+| Implement instruction decoder      | High   | Completed    |
+| Create testbenches for all modules | Medium | In progess   |
+| Integrate all components           | Medium | Completed    |
+| Perform simulation                 | Low    | Completed    |
 | Optimize for performance           | Low    | Not Started  |
-| Implement error handling and       | Medium | Not Started  |
+| Implement error handling and       | Medium | Completed    |
 | debugging tools                    |        |              |
 | Documentation with LaTex           | Low    | Not Started  |
-| Create visualization for           | Medium	| Planed       |
+| Create visualization for           | Medium | Planed       |
 | simulation results                 |        |              |
-| Add support for shared memory      | Medium	| Planed       |
+| Add support for shared memory      | Medium | Planed       |
 
 ## Acknowledgments
 
