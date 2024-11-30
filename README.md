@@ -5,6 +5,11 @@ We are a group of students working on designing a simple GPU using Verilog. Our 
 
 We have taken some inspiration from [adam-maj/tiny-gpu](https://github.com/adam-maj/tiny-gpu), our project is independently developed to suit our learning objectives.
 
+# Architecture
+![architecture drawio](https://github.com/user-attachments/assets/792c9616-d6c7-4104-8f67-dc89ae7a1104)
+
+Special thanks to our teammates [@Soap](https://github.com/Spavvvv) and [@Kaiser287](https://github.com/Kaiser287) for their efforts of drawing the diagram
+
 ## Completed Tasks by Week
 
 |# Week | Tasks Completed                                |
