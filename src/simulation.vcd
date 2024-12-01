@@ -1,0 +1,418 @@
+$date
+	Sun Dec 01 17:28:43 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module compute_core_tb $end
+$scope module uut $end
+$var wire 1 ! clk $end
+$var wire 1 " reset $end
+$var wire 4 # src_reg [3:0] $end
+$var wire 3 $ scheduled_thread [2:0] $end
+$var wire 4 % opcode [3:0] $end
+$var wire 16 & instruction [15:0] $end
+$var wire 8 ' immediate [7:0] $end
+$var wire 4 ( dest_reg [3:0] $end
+$var reg 8 ) active_threads [7:0] $end
+$var reg 16 * alu_result [15:0] $end
+$var reg 1 + cmp_flag $end
+$var reg 1 , halt $end
+$var reg 8 - next_active_threads [7:0] $end
+$var reg 1 . pc_increment $end
+$var integer 32 / current_thread [31:0] $end
+$var integer 32 0 i [31:0] $end
+$scope module decoder_inst $end
+$var wire 16 1 instruction [15:0] $end
+$var reg 4 2 dest_reg [3:0] $end
+$var reg 8 3 immediate [7:0] $end
+$var reg 4 4 opcode [3:0] $end
+$var reg 4 5 src_reg [3:0] $end
+$upscope $end
+$scope module fetcher_inst $end
+$var wire 16 6 instruction [15:0] $end
+$var wire 16 7 pc_in [15:0] $end
+$upscope $end
+$scope module scheduler_inst $end
+$var wire 8 8 active_threads [7:0] $end
+$var wire 1 ! clk $end
+$var wire 1 " reset $end
+$var parameter 32 9 NUM_THREADS $end
+$var reg 3 : scheduled_thread [2:0] $end
+$var reg 1 ; thread_found $end
+$var integer 32 < i [31:0] $end
+$var integer 32 = last_thread [31:0] $end
+$var integer 32 > thread [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 9
+$end
+#0
+$dumpvars
+bx >
+b11111111111111111111111111111111 =
+bx <
+x;
+b0 :
+b11111111 8
+b0 7
+b101000000000110 6
+b0 5
+b101 4
+b110 3
+b0 2
+b101000000000110 1
+b1000 0
+b10000 /
+x.
+bx -
+0,
+x+
+bx *
+b11111111 )
+b0 (
+b110 '
+b101000000000110 &
+b101 %
+b0 $
+b0 #
+1"
+0!
+$end
+#5
+b10000 /
+b1000 0
+1!
+#10
+0!
+0"
+#15
+b1111 '
+b1111 3
+b100 %
+b100 4
+b0 =
+b100000000001111 &
+b100000000001111 1
+b100000000001111 6
+b1 7
+b111 >
+b1001 <
+1;
+1.
+b0 /
+b11111111 -
+1!
+#20
+0!
+#25
+b110 '
+b110 3
+b101 %
+b101 4
+0.
+b1 =
+b101000000000110 &
+b101000000000110 1
+b101000000000110 6
+b0 7
+b1 $
+b1 :
+b0 >
+b1001 <
+1;
+1!
+#30
+0!
+#35
+b10 =
+b10 $
+b10 :
+b101000000000110 &
+b101000000000110 1
+b101000000000110 6
+b0 7
+b1 >
+b1001 <
+1;
+1.
+b1 /
+1!
+#40
+0!
+#45
+b11 =
+b11 $
+b11 :
+b10 /
+b10 >
+b1001 <
+1;
+1!
+#50
+0!
+#55
+b100 =
+b100 $
+b100 :
+b101000000000110 &
+b101000000000110 1
+b101000000000110 6
+b0 7
+b11 >
+b1001 <
+1;
+b11 /
+1!
+#60
+0!
+#65
+b101 =
+b101 $
+b101 :
+b100 /
+b100 >
+b1001 <
+1;
+1!
+#70
+0!
+#75
+b110 =
+b110 $
+b110 :
+b101000000000110 &
+b101000000000110 1
+b101000000000110 6
+b0 7
+b101 >
+b1001 <
+1;
+b101 /
+1!
+#80
+0!
+#85
+b111 =
+b111 $
+b111 :
+b110 /
+b110 >
+b1001 <
+1;
+1!
+#90
+0!
+#95
+b0 '
+b0 3
+b1001 %
+b1001 4
+b0 =
+b0 $
+b0 :
+b1001000000000000 &
+b1001000000000000 1
+b1001000000000000 6
+b10 7
+b111 >
+b1001 <
+1;
+b111 /
+1!
+#100
+0!
+#105
+b1111 '
+b1111 3
+b100 %
+b100 4
+b1 =
+b100000000001111 &
+b100000000001111 1
+b100000000001111 6
+b1 7
+b1 $
+b1 :
+b0 /
+b0 >
+b1001 <
+1;
+1!
+#110
+0!
+#115
+b10 =
+b10 $
+b10 :
+0.
+b100000000001111 &
+b100000000001111 1
+b100000000001111 6
+b1 7
+b1 >
+b1001 <
+1;
+b1 /
+1!
+#120
+0!
+#125
+b11 =
+b11 $
+b11 :
+0.
+b10 /
+b10 >
+b1001 <
+1;
+1!
+#130
+0!
+#135
+b100 =
+b100 $
+b100 :
+b100000000001111 &
+b100000000001111 1
+b100000000001111 6
+b1 7
+b11 >
+b1001 <
+1;
+0.
+b11 /
+1!
+#140
+0!
+#145
+b101 =
+b101 $
+b101 :
+0.
+b100 /
+b100 >
+b1001 <
+1;
+1!
+#150
+0!
+#155
+b110 =
+b110 $
+b110 :
+b100000000001111 &
+b100000000001111 1
+b100000000001111 6
+b1 7
+b101 >
+b1001 <
+1;
+0.
+b101 /
+1!
+#160
+b110 '
+b110 3
+b101 %
+b101 4
+b101000000000110 &
+b101000000000110 1
+b101000000000110 6
+b0 7
+b0 $
+b0 :
+b11111111111111111111111111111111 =
+b10000 /
+b1000 0
+0!
+1"
+#165
+b10000 /
+b1000 0
+1!
+#170
+0!
+0"
+#175
+b1111 '
+b1111 3
+b100 %
+b100 4
+b100000000001111 &
+b100000000001111 1
+b100000000001111 6
+b1 7
+b0 =
+1.
+b0 /
+b111 >
+b1001 <
+1;
+1!
+#180
+0!
+#185
+b110 '
+b110 3
+b101 %
+b101 4
+b1 =
+b1 $
+b1 :
+0.
+b101000000000110 &
+b101000000000110 1
+b101000000000110 6
+b0 7
+b0 >
+b1001 <
+1;
+1!
+#190
+0!
+#195
+b10 =
+b10 $
+b10 :
+1.
+b1 /
+b1 >
+b1001 <
+1;
+1!
+#200
+0!
+#205
+b11 =
+b11 $
+b11 :
+b101000000000110 &
+b101000000000110 1
+b101000000000110 6
+b0 7
+b10 >
+b1001 <
+1;
+b10 /
+1!
+#210
+0!
+#215
+b100 =
+b100 $
+b100 :
+b11 /
+b11 >
+b1001 <
+1;
+1!
+#220
+0!

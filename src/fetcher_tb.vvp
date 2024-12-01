@@ -1,0 +1,211 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\Users\ASUSTU~1\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\Users\ASUSTU~1\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\Users\ASUSTU~1\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\Users\ASUSTU~1\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\Users\ASUSTU~1\iverilog\lib\ivl\va_math.vpi";
+:vpi_module "C:\Users\ASUSTU~1\iverilog\lib\ivl\v2009.vpi";
+S_0000016f74885750 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0000016f748858e0 .scope module, "fetcher_tb" "fetcher_tb" 3 1;
+ .timescale 0 0;
+P_0000016f745bbd80 .param/l "ADDR_WIDTH" 0 3 4, +C4<00000000000000000000000000010000>;
+P_0000016f745bbdb8 .param/l "DATA_WIDTH" 0 3 5, +C4<00000000000000000000000000010000>;
+v0000016f748529e0_0 .array/port v0000016f748529e0, 0;
+L_0000016f7488c100 .functor BUFZ 16, v0000016f748529e0_0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_1 .array/port v0000016f748529e0, 1;
+L_0000016f7488c250 .functor BUFZ 16, v0000016f748529e0_1, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_2 .array/port v0000016f748529e0, 2;
+L_0000016f7488c330 .functor BUFZ 16, v0000016f748529e0_2, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_3 .array/port v0000016f748529e0, 3;
+L_0000016f7488c170 .functor BUFZ 16, v0000016f748529e0_3, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_4 .array/port v0000016f748529e0, 4;
+L_0000016f7488c1e0 .functor BUFZ 16, v0000016f748529e0_4, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_5 .array/port v0000016f748529e0, 5;
+L_0000016f7488c3a0 .functor BUFZ 16, v0000016f748529e0_5, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_6 .array/port v0000016f748529e0, 6;
+L_0000016f74883ee0 .functor BUFZ 16, v0000016f748529e0_6, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_7 .array/port v0000016f748529e0, 7;
+L_0000016f74884340 .functor BUFZ 16, v0000016f748529e0_7, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_8 .array/port v0000016f748529e0, 8;
+L_0000016f74883e70 .functor BUFZ 16, v0000016f748529e0_8, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_9 .array/port v0000016f748529e0, 9;
+L_0000016f748842d0 .functor BUFZ 16, v0000016f748529e0_9, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_10 .array/port v0000016f748529e0, 10;
+L_0000016f74883b60 .functor BUFZ 16, v0000016f748529e0_10, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_11 .array/port v0000016f748529e0, 11;
+L_0000016f74883cb0 .functor BUFZ 16, v0000016f748529e0_11, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_12 .array/port v0000016f748529e0, 12;
+L_0000016f74883bd0 .functor BUFZ 16, v0000016f748529e0_12, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_13 .array/port v0000016f748529e0, 13;
+L_0000016f748838c0 .functor BUFZ 16, v0000016f748529e0_13, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_14 .array/port v0000016f748529e0, 14;
+L_0000016f74883460 .functor BUFZ 16, v0000016f748529e0_14, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0_15 .array/port v0000016f748529e0, 15;
+L_0000016f74883c40 .functor BUFZ 16, v0000016f748529e0_15, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f748529e0 .array "instr_mem", 15 0, 15 0;
+v0000016f74852a80_0 .net "instruction", 15 0, L_0000016f7488c090;  1 drivers
+v0000016f74852b20_0 .var "pc_in", 15 0;
+E_0000016f74875eb0 .event anyedge, v0000016f74852940_0;
+S_0000016f748527b0 .scope module, "uut" "fetcher" 3 15, 4 4 0, S_0000016f748858e0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "pc_in";
+    .port_info 1 /OUTPUT 16 "instruction";
+    .port_info 2 /INPUT 256 "instr_mem";
+L_0000016f7488c090 .functor BUFZ 16, L_0000016f74883370, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v0000016f74853020_0 .net *"_ivl_0", 15 0, L_0000016f74883370;  1 drivers
+v0000016f74885a70 .array "instr_mem", 15 0;
+v0000016f74885a70_0 .net v0000016f74885a70 0, 15 0, L_0000016f7488c100; 1 drivers
+v0000016f74885a70_1 .net v0000016f74885a70 1, 15 0, L_0000016f7488c250; 1 drivers
+v0000016f74885a70_2 .net v0000016f74885a70 2, 15 0, L_0000016f7488c330; 1 drivers
+v0000016f74885a70_3 .net v0000016f74885a70 3, 15 0, L_0000016f7488c170; 1 drivers
+v0000016f74885a70_4 .net v0000016f74885a70 4, 15 0, L_0000016f7488c1e0; 1 drivers
+v0000016f74885a70_5 .net v0000016f74885a70 5, 15 0, L_0000016f7488c3a0; 1 drivers
+v0000016f74885a70_6 .net v0000016f74885a70 6, 15 0, L_0000016f74883ee0; 1 drivers
+v0000016f74885a70_7 .net v0000016f74885a70 7, 15 0, L_0000016f74884340; 1 drivers
+v0000016f74885a70_8 .net v0000016f74885a70 8, 15 0, L_0000016f74883e70; 1 drivers
+v0000016f74885a70_9 .net v0000016f74885a70 9, 15 0, L_0000016f748842d0; 1 drivers
+v0000016f74885a70_10 .net v0000016f74885a70 10, 15 0, L_0000016f74883b60; 1 drivers
+v0000016f74885a70_11 .net v0000016f74885a70 11, 15 0, L_0000016f74883cb0; 1 drivers
+v0000016f74885a70_12 .net v0000016f74885a70 12, 15 0, L_0000016f74883bd0; 1 drivers
+v0000016f74885a70_13 .net v0000016f74885a70 13, 15 0, L_0000016f748838c0; 1 drivers
+v0000016f74885a70_14 .net v0000016f74885a70 14, 15 0, L_0000016f74883460; 1 drivers
+v0000016f74885a70_15 .net v0000016f74885a70 15, 15 0, L_0000016f74883c40; 1 drivers
+v0000016f74885b10_0 .net "instruction", 15 0, L_0000016f7488c090;  alias, 1 drivers
+v0000016f74852940_0 .net "pc_in", 15 0, v0000016f74852b20_0;  1 drivers
+L_0000016f74883370 .array/port v0000016f74885a70, v0000016f74852b20_0;
+    .scope S_0000016f748858e0;
+T_0 ;
+    %pushi/vec4 42405, 0, 16;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 23130, 0, 16;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 4660, 0, 16;
+    %ix/load 4, 2, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 57005, 0, 16;
+    %ix/load 4, 3, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 34661, 0, 16;
+    %ix/load 4, 4, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 43981, 0, 16;
+    %ix/load 4, 5, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 4386, 0, 16;
+    %ix/load 4, 6, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 43707, 0, 16;
+    %ix/load 4, 7, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 57005, 0, 16;
+    %ix/load 4, 8, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 61453, 0, 16;
+    %ix/load 4, 9, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 49407, 0, 16;
+    %ix/load 4, 10, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 0, 0, 16;
+    %ix/load 4, 11, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 51966, 0, 16;
+    %ix/load 4, 12, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 4660, 0, 16;
+    %ix/load 4, 13, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 17185, 0, 16;
+    %ix/load 4, 14, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %pushi/vec4 39321, 0, 16;
+    %ix/load 4, 15, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0000016f748529e0, 4, 0;
+    %vpi_call/w 3 42 "$display", "Time\011PC\011Instruction" {0 0 0};
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 2, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 3, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 4, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 5, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 6, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 7, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 8, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 9, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 10, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 11, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 12, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 13, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 14, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 15, 0, 16;
+    %store/vec4 v0000016f74852b20_0, 0, 16;
+    %delay 10, 0;
+    %vpi_call/w 3 63 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000016f748858e0;
+T_1 ;
+    %wait E_0000016f74875eb0;
+    %vpi_call/w 3 68 "$display", "%0t\011%h\011%h", $time, v0000016f74852b20_0, v0000016f74852a80_0 {0 0 0};
+    %jmp T_1;
+    .thread T_1, $push;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "fetcher_tb.v";
+    "fetcher.v";

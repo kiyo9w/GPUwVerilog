@@ -1,5 +1,9 @@
 // compute_core.v
 `include "definitions.vh"
+`include "scheduler.v"  // Bao gồm mô-đun scheduler
+`include "fetcher.v"    // Bao gồm mô-đun fetcher
+`include "decoder.v"    // Bao gồm mô-đun decoder
+
 
 module compute_core (
     input clk,

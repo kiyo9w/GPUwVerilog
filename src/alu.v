@@ -1,6 +1,7 @@
 // alu.v
 `include "definitions.vh"
 
+
 module alu (
     input [3:0] opcode,
     input [`DATA_WIDTH-1:0] operand_a,
