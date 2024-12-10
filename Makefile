@@ -7,7 +7,7 @@ VERILOG_SOURCES = $(shell pwd)/src/compute_core.v \
                  $(shell pwd)/src/decoder.v \
                  $(shell pwd)/src/alu.v
 TOPLEVEL = compute_core
-MODULE = testbench.test_matadd_simple
+MODULE = testbench.test_execution
 
 SIM = icarus
 COMPILE_ARGS += -g2012

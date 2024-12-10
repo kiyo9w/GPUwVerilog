@@ -5,12 +5,10 @@ module gpu_top (
     input clk,
     input reset
 );
-    // Wires to connect modules
     wire [`ADDR_WIDTH-1:0] pc_out;
     wire [15:0] instruction;
     wire halt;
 
-    // Instantiate Compute Core
     compute_core compute_core_inst (
         .clk(clk),
         .reset(reset),
@@ -19,7 +17,6 @@ module gpu_top (
         .halt(halt)
     );
 
-    // Instantiate Fetcher
     fetcher fetcher_inst (
         .clk(clk),
         .reset(reset),

@@ -12,6 +12,6 @@ module decoder (
         opcode = instruction[15:12];
         dest_reg = instruction[11:8];
         src_reg = instruction[7:4];
-        immediate = instruction[7:0]; // For instructions with immediate values
+        immediate = instruction[7:0];
     end
 endmodule
